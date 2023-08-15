@@ -12,8 +12,8 @@
         <h1>Controle Financeiro</h1>
       </header>
 
-      <div>
-        <section>
+      <div class="financial-summary-sections">
+        <section id="entries-section">
           <div>
             <p>Entradas</p>
             <img
@@ -23,7 +23,7 @@
           </div>
         </section>
 
-        <section>
+        <section id="expenditures-section">
           <div>
             <p>Saídas</p>
             <img
@@ -33,24 +33,28 @@
           </div>
         </section>
 
-        <section>
+        <section id="total-section">
           <p>Total</p>
           <img src="./images/icons8-cifrão-16.png" alt="cifrão" />
         </section>
       </div>
 
-      <form action="./index.html" method="get">
-        <label for="description">Descrição</label>
-        <input type="text" name="description" id="description" />
+      <form action="./index.html" method="post">
+        <label for="transactionDescription">Descrição</label>
+        <input
+          type="text"
+          name="transactionDescription"
+          id="transactionDescription"
+        />
 
-        <label for="value">Valor</label>
-        <input type="number" name="value" id="value" />
+        <label for="transactionAmount">Valor</label>
+        <input type="number" name="transactionAmount" id="transactionAmount" />
 
-        <label for="entry">entrada</label>
-        <input type="radio" name="entranceAndExit" id="entry" />
+        <label for="income">entrada</label>
+        <input type="radio" name="transactionType" id="income" />
 
-        <label for="exit">saída</label>
-        <input type="radio" name="entranceAndExit" id="exit" />
+        <label for="expense">saída</label>
+        <input type="radio" name="transactionType" id="expense" />
 
         <input type="submit" value="Adicionar" id="submit" />
       </form>
