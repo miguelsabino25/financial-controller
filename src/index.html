@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Controle financeiro</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Controle Financeiro</h1>
+      </header>
+
+      <div>
+        <section>
+          <div>
+            <p>Entradas</p>
+            <img
+              src="./images/icons8-enviar-mensagem-16.png"
+              alt="seta para cima"
+            />
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <p>Saídas</p>
+            <img
+              src="./images/icons8-abaixo-dentro-de-um-círculo-16.png"
+              alt="seta para baixo"
+            />
+          </div>
+        </section>
+
+        <section>
+          <p>Total</p>
+          <img src="./images/icons8-cifrão-16.png" alt="cifrão" />
+        </section>
+      </div>
+
+      <form action="./index.html" method="get">
+        <label for="description">Descrição</label>
+        <input type="text" name="description" id="description" />
+
+        <label for="value">Valor</label>
+        <input type="number" name="value" id="value" />
+
+        <label for="entry">entrada</label>
+        <input type="radio" name="entranceAndExit" id="entry" />
+
+        <label for="exit">saída</label>
+        <input type="radio" name="entranceAndExit" id="exit" />
+
+        <input type="submit" value="Adicionar" id="submit" />
+      </form>
+
+      <div id="result">
+        <p>Descrição</p>
+        <p>Valor</p>
+        <p>Tipo</p>
+      </div>
+
+      <footer>
+        <a href="https://icons8.com/icon/124435/enviar-mensagem"
+          >Enviar Mensagem</a
+        >
+        icon by <a href="https://icons8.com">Icons8</a>
+      </footer>
+    </main>
+  </body>
+
+  <script type="module" src="./scripts/main.js"></script>
+</html>
