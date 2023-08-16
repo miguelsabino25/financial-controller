@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Controle financeiro</title>
   </head>
+
   <body>
     <main>
       <header>
@@ -13,56 +21,98 @@
       </header>
 
       <div class="financial-summary-sections">
-        <section id="entries-section">
-          <div>
+        <section id="entries-section" class="financial-box">
+          <div class="box-financial">
             <p>Entradas</p>
             <img
               src="./images/icons8-enviar-mensagem-16.png"
               alt="seta para cima"
             />
           </div>
+          <p class="bold">R$ 0.00</p>
         </section>
 
-        <section id="expenditures-section">
-          <div>
+        <section id="expenditures-section" class="financial-box">
+          <div class="box-financial">
             <p>Saídas</p>
             <img
               src="./images/icons8-abaixo-dentro-de-um-círculo-16.png"
               alt="seta para baixo"
             />
           </div>
+          <p class="bold">R$ 0.00</p>
         </section>
 
-        <section id="total-section">
-          <p>Total</p>
-          <img src="./images/icons8-cifrão-16.png" alt="cifrão" />
+        <section id="total-section" class="financial-box">
+          <div class="box-financial">
+            <p>Total</p>
+            <img src="./images/icons8-cifrão-16.png" alt="cifrão" />
+          </div>
+          <p class="bold">R$ 0.00</p>
         </section>
       </div>
 
       <form action="./index.html" method="post">
-        <label for="transactionDescription">Descrição</label>
-        <input
-          type="text"
-          name="transactionDescription"
-          id="transactionDescription"
-        />
+        <div class="box-transaction">
+          <label for="transactionDescription">Descrição</label>
+          <input
+            type="text"
+            name="transactionDescription"
+            id="transactionDescription"
+          />
+        </div>
 
-        <label for="transactionAmount">Valor</label>
-        <input type="number" name="transactionAmount" id="transactionAmount" />
+        <div class="box-transaction">
+          <label for="transactionAmount">Valor</label>
+          <input
+            type="number"
+            name="transactionAmount"
+            id="transactionAmount"
+          />
+        </div>
 
-        <label for="income">entrada</label>
-        <input type="radio" name="transactionType" id="income" />
+        <div class="box-radio">
+          <div class="box-income">
+            <input type="radio" name="transactionType" id="income" />
+            <label for="income">Entrada</label>
+          </div>
 
-        <label for="expense">saída</label>
-        <input type="radio" name="transactionType" id="expense" />
+          <div class="box-expense">
+            <input type="radio" name="transactionType" id="expense" />
+            <label for="expense">Saída</label>
+          </div>
+        </div>
 
         <input type="submit" value="Adicionar" id="submit" />
       </form>
 
       <div id="result">
-        <p>Descrição</p>
-        <p>Valor</p>
-        <p>Tipo</p>
+        <div id="descriptionResult" class="box-result">
+          <p>Descrição</p>
+          <ul>
+            <li>asdsadsada</li>
+          </ul>
+        </div>
+
+        <div id="amountResult" class="box-result">
+          <p>Valor</p>
+          <ul>
+            <li>asdsadsa</li>
+          </ul>
+        </div>
+
+        <div id="typeResult" class="box-result">
+          <p>Tipo</p>
+          <ul>
+            <li>
+              <img
+                src="./images/icons8-abaixo-dentro-de-um-círculo-16-red.png"
+                alt=""
+              />
+              <img src="./images/icons8-lixeira-16.png" alt="" />
+            </li>
+          </ul>
+        </div>
       </div>
 
       <footer>
