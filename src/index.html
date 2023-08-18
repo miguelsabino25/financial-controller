@@ -29,7 +29,7 @@
               alt="seta para cima"
             />
           </div>
-          <p class="bold">R$ 0.00</p>
+          <p class="bold" id="entries">R$ 0.00</p>
         </section>
 
         <section id="expenditures-section" class="financial-box">
@@ -40,7 +40,7 @@
               alt="seta para baixo"
             />
           </div>
-          <p class="bold">R$ 0.00</p>
+          <p class="bold" id="exit">R$ 0.00</p>
         </section>
 
         <section id="total-section" class="financial-box">
@@ -48,7 +48,7 @@
             <p>Total</p>
             <img src="./images/icons8-cifrão-16.png" alt="cifrão" />
           </div>
-          <p class="bold">R$ 0.00</p>
+          <p class="bold" id="total">R$ 0.00</p>
         </section>
       </div>
 
@@ -73,12 +73,23 @@
 
         <div class="box-radio">
           <div class="box-income">
-            <input type="radio" name="transactionType" id="income" />
+            <input
+              type="radio"
+              name="transactionType"
+              id="income"
+              checked
+              value="income"
+            />
             <label for="income">Entrada</label>
           </div>
 
           <div class="box-expense">
-            <input type="radio" name="transactionType" id="expense" />
+            <input
+              type="radio"
+              name="transactionType"
+              id="expense"
+              value="expense"
+            />
             <label for="expense">Saída</label>
           </div>
         </div>
@@ -89,29 +100,14 @@
       <div id="result">
         <div id="descriptionResult" class="box-result">
           <p>Descrição</p>
-          <ul>
-            <li>asdsadsada</li>
-          </ul>
         </div>
 
         <div id="amountResult" class="box-result">
           <p>Valor</p>
-          <ul>
-            <li>asdsadsa</li>
-          </ul>
         </div>
 
         <div id="typeResult" class="box-result">
           <p>Tipo</p>
-          <ul>
-            <li>
-              <img
-                src="./images/icons8-abaixo-dentro-de-um-círculo-16-red.png"
-                alt=""
-              />
-              <img src="./images/icons8-lixeira-16.png" alt="" />
-            </li>
-          </ul>
         </div>
       </div>
 

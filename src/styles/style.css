@@ -110,10 +110,6 @@ form .box-transaction {
 
 .box-result ul li {
   margin: 10px 0 10px 0;
-}
-
-#typeResult ul li {
-  margin: 10px 0 10px 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
