@@ -118,8 +118,11 @@ form .box-transaction {
 }
 
 .box-result ul li img {
-  cursor: pointer;
   margin-left: 10px;
+}
+
+.buttonDelete {
+  cursor: pointer;
 }
 
 footer {
