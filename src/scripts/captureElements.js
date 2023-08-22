@@ -10,6 +10,7 @@ export {
   descriptionResult,
   amountResult,
   typeResult,
+  ButtonDelete,
 };
 
 const entries = document.querySelector("#entries");
@@ -23,3 +24,4 @@ const submit = document.querySelector("#submit");
 const descriptionResult = document.querySelector("#descriptionResult");
 const amountResult = document.querySelector("#amountResult");
 const typeResult = document.querySelector("#typeResult");
+const ButtonDelete = document.querySelectorAll(".buttonDelete");
